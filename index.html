@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD en JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+
+    <!-- <h2 class="titulo">CRUD de Personas</h2> -->
+
+    <div class="formularios">
+        
+        <form id="form">
+            <h2 class="titulo">CRUD de Personas</h2>
+            <input type="hidden" id="idPersona">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="number" id="edad" placeholder="Edad" required>
+            <input type="text" id="estado" placeholder="Estado" required>
+            <label>
+                Aprobado:
+                <input type="checkbox" id="aprobado" >
+            </label>
+            <button type="submit">Guardar</button>
+        </form>
+    
+        <form id="form2">
+            <h2>buscar persona</h2>
+            <input type="number" id="buscar" placeholder="Nombre" required>
+            <button type="submit">Buscar</button>
+        </form>
+
+        
+    </div>
+    
+    <div id="informacion">
+        
+    </div>
+
+    <table id="tabla" class="mostrar">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Estado</th>
+                <th>Aprobado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="cuerpoTabla">
+            <!-- Aquí se insertarán las filas -->
+        </tbody>
+    </table>
+
+    <script src="crud.js"></script>
+</body>
+</html>

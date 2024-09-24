@@ -1,0 +1,40 @@
+body{
+   padding: 2%;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.formularios{
+   width: 35%;
+   display: flex;
+   gap: 20px;
+   margin: auto;
+}
+
+.titulo{
+   margin: auto;
+}
+
+#form , #form2{
+   background-color: rgba(61, 61, 180, 0.575);
+   margin: auto;
+   padding: 15px;
+   border-radius: 15px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+table, th, td {
+   border: 1px solid black;
+   border-collapse: collapse;
+   padding: 8px;
+}
+button {
+   margin: 5px;
+}
+
+.mostrar{
+   display: none;
+}
